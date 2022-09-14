@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Aeonik";
+  src: url("../resources/fonts/Aeonik-Regular.otf");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: 'Aeonik';
+  overscroll-behavior: none;
+  /* overflow: hidden; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF;
+}
+
+p {
+  color: #FFF;
+}
+
+a {
+  color: #FFF;
+}
+
+.color-gray {
+  color: #777;
+}
+/* ----------------------------- nav */
+.navigation {
+  background: linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, .75));
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+}
+
+.navigation-item {
+  text-decoration: none;
+  color: #777;
+  transition: 500ms;
+}
+
+.navigation-item:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    padding: 25px;
+    justify-content: space-between;
+    position: fixed;
+    gap: 0px;
+  }
+}
+
+/* ----------------------------- journal */
+
+.journal-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  height: 100vh;
+  width: 100vw;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.scroll-gallery {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.scroll-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-item {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    padding: 0px;
+  }
+  .scroll-gallery {
+    flex-direction: column;
+    overflow: visible;
+    height: 100vh;
+  }
+}
+
+/* ----------------------------- information */
+
+.information-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a:is(:link, :active, :visited).active {
+  color: #FFF;
+}
+
+.social-links {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+}
+.social-links a {
+  color: #777;
+  transition: 500ms;
+}
+.social-links a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
