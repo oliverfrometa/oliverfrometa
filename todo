@@ -1,0 +1,3 @@
+1 - Remove the page file extension from the url
+
+2 - Create image gallery that pulls images from a database. Add a feature that will allow me (admin/user) to upload images to the database, that then will automatically push the new images to the image gallery. Alternatively, instead of creating a page where I am able to upload images, I have a local folder on my computer that is synced with the database and will upload the file immediately.
