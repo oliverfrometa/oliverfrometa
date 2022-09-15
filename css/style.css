@@ -3,10 +3,6 @@
   src: url("../resources/fonts/Aeonik-Regular.otf");
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +13,10 @@ body {
   background-color: #111;
   font-family: 'Aeonik';
   overscroll-behavior: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +32,7 @@ a {
 }
 
 /* ----------------------------- nav */
+
 .navigation {
   width: 100vw;
   padding: 25px;
@@ -40,7 +41,6 @@ a {
   position: fixed;
   top: 0;
 }
-
 
 .navigation-item {
   font-size: 2em;
@@ -52,29 +52,10 @@ a {
   text-decoration: none;
   color: #555;
 }
+/* ----------------------------- GALLERY */
+/* GALLERY can be used globally and will be used on the WEB DEVELOPMENT page */
 
-/* @media only screen and (max-width: 600px) {
-  .navigation {
-    padding: 25px;
-    justify-content: space-between;
-    position: fixed;
-    gap: 0px;
-  }
-} */
-
-/* ----------------------------- journal */
-
-.journal-container {
-  height: 100vh;
-  width: 100vw;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery {
+.gallery-container {
   height: 100vh;
   width: 100vw;
   padding: 50px 0px;
@@ -83,15 +64,11 @@ a {
   align-items: center;
 }
 
-.scroll-gallery {
+.gallery {
   height: 100vh;
   width: 100%;
   display: flex;
   overflow-x: auto;
-}
-
-.scroll-gallery::-webkit-scrollbar {
-  display: none;
 }
 
 .gallery-item {
@@ -100,22 +77,8 @@ a {
 
 @media only screen and (max-width: 600px) {
   .gallery {
-    padding: 0px;
-  }
-  .scroll-gallery {
     flex-direction: column;
     overflow: visible;
     height: 100vh;
   }
-}
-
-/* ----------------------------- information */
-
-.information-container {
-  padding: 20px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
