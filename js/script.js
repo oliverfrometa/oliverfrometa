@@ -1,5 +1,5 @@
-const scrollGallery = document.querySelector(".scroll-gallery");
+const gallery = document.querySelector(".gallery");
 
-scrollGallery.addEventListener("wheel", (evt) => {
-    scrollGallery.scrollLeft += evt.deltaY;
+gallery.addEventListener("wheel", (evt) => {
+    gallery.scrollLeft += evt.deltaY;
 });
