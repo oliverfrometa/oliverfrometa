@@ -9,16 +9,41 @@
   box-sizing: border-box;
 }
 
-:root {
-  --general-padding: 20px;
-}
-
 ::selection {
-  background-color: #dbdbdb;
-  color: #111;
+  background-color: #fff;
+  color: #000;
 }
 
 body {
-  background-color: #111;
+  /* background-color: #000; */
   font-family: 'Aeonik';
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-height: 50vh;
+}
+
+.quotes-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: #fff; */
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+}
+
+#newQuoteSection {
+  font-size: 2em;
 }
