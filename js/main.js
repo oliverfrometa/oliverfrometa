@@ -1,8 +1,8 @@
 let quotes = [
-    "It always seems impossible until it's done.",
-    "Focus on things you can control. Let go of things you can't.",
+    "Focus on things you can control and let go of things you can't.",
     "Your life is as good as your mindset.",
-    "Act like the person you want to become."
+    "Operate from a place of love, kindness and generosity without expecting anything in return.",
+    "Forget about your what and focus on your why."
 ];
 
 let newQuoteSection = document.querySelector("#newQuoteSection");
