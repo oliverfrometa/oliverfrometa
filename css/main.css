@@ -30,12 +30,11 @@ body {
 }
 
 .quotes-container {
-  height: 100%;
   width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   text-align: center;
 }
 
